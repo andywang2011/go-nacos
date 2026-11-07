@@ -1,0 +1,13 @@
+*.exe
+*.test
+coverage.out
+.env
+
+# built example binaries
+examples/watch/watch
+cover.out
+vendor/
+examples/**/main
+examples/**/context
+examples/**/watch
+examples/**/basic
