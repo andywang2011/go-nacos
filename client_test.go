@@ -168,7 +168,7 @@ func TestClient_Watch_Validation(t *testing.T) {
 	if err := c.Watch(context.Background(), nil); err == nil {
 		t.Fatal("nil onChange")
 	}
-	//nolint:staticcheck // deliberately nil
+	//lint:ignore SA1012 intentional nil context in test
 	if err := c.Watch(nil, func([]byte) error { return nil }); err == nil {
 		t.Fatal("nil ctx")
 	}
